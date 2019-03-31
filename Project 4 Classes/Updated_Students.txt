@@ -1,0 +1,42 @@
+Iteams checked out:
+__________________
+
+
+ID	First	Last	Items
+
+82600 LESLIE PEZ
+4
+Badminton Racquetball Scoreboard Tent 
+
+58517 JIMMY BLAKE
+1
+Dodgeball 
+
+19232 JESSIE SIMON
+1
+Locker 
+
+80426 COTNY PETSN
+1
+iPhoneCuzWhyNot 
+
+33354 CLARK ROSS
+4
+Badminton Basketball Dodgeball Frisbee 
+
+47322 ROSE TUCKER
+6
+Locker Frisbee Kickball Racquetball Scoreboard Cooler 
+
+51162 CLYDE PITTMAN
+8
+Towel Locker Scoreboard Cooler Badminton Racquetball Tent Volleyball 
+
+95017 SUE LEONARD
+5
+Volleyball Towel Locker Cooler Goggles 
+
+15359 MARVIN PHILLIPS
+1
+Towel 
+

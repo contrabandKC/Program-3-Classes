@@ -1,0 +1,8 @@
+﻿  ClassStudent.cpp
+c:\users\erik marquez\desktop\cpp\program 4 classes\project 4 classes\classstudent.h(6): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\erik marquez\desktop\cpp\program 4 classes\project 4 classes\classstudent.cpp(56): warning C4018: '<': signed/unsigned mismatch
+c:\users\erik marquez\desktop\cpp\program 4 classes\project 4 classes\classstudent.cpp(72): warning C4018: '<=': signed/unsigned mismatch
+c:\users\erik marquez\desktop\cpp\program 4 classes\project 4 classes\classstudent.cpp(92): warning C4018: '<': signed/unsigned mismatch
+c:\users\erik marquez\desktop\cpp\program 4 classes\project 4 classes\classstudent.cpp(97): warning C4018: '<': signed/unsigned mismatch
+c:\users\erik marquez\desktop\cpp\program 4 classes\project 4 classes\classstudent.cpp(124): warning C4018: '<': signed/unsigned mismatch
+  Project 4 Classes.vcxproj -> C:\Users\Erik Marquez\Desktop\Cpp\Program 4 Classes\Project 4 Classes\Debug\Project 4 Classes.exe
