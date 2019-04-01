@@ -1,8 +1,19 @@
-﻿  ClassStudent.cpp
+﻿  Project 4 Classes.cpp
+c:\users\erik marquez\desktop\cpp\program 4 classes\project 4 classes\project 4 classes.cpp(6): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 c:\users\erik marquez\desktop\cpp\program 4 classes\project 4 classes\classstudent.h(6): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-c:\users\erik marquez\desktop\cpp\program 4 classes\project 4 classes\classstudent.cpp(56): warning C4018: '<': signed/unsigned mismatch
-c:\users\erik marquez\desktop\cpp\program 4 classes\project 4 classes\classstudent.cpp(72): warning C4018: '<=': signed/unsigned mismatch
-c:\users\erik marquez\desktop\cpp\program 4 classes\project 4 classes\classstudent.cpp(92): warning C4018: '<': signed/unsigned mismatch
-c:\users\erik marquez\desktop\cpp\program 4 classes\project 4 classes\classstudent.cpp(97): warning C4018: '<': signed/unsigned mismatch
-c:\users\erik marquez\desktop\cpp\program 4 classes\project 4 classes\classstudent.cpp(124): warning C4018: '<': signed/unsigned mismatch
+c:\users\erik marquez\desktop\cpp\program 4 classes\project 4 classes\projectfuntions.h(6): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\erik marquez\desktop\cpp\program 4 classes\project 4 classes\project 4 classes.cpp(17): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  ClassStudent.cpp
+c:\users\erik marquez\desktop\cpp\program 4 classes\project 4 classes\classstudent.h(6): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\erik marquez\desktop\cpp\program 4 classes\project 4 classes\classstudent.cpp(73): warning C4018: '<=': signed/unsigned mismatch
+c:\users\erik marquez\desktop\cpp\program 4 classes\project 4 classes\classstudent.cpp(93): warning C4018: '<': signed/unsigned mismatch
+c:\users\erik marquez\desktop\cpp\program 4 classes\project 4 classes\classstudent.cpp(98): warning C4018: '<': signed/unsigned mismatch
+c:\users\erik marquez\desktop\cpp\program 4 classes\project 4 classes\classstudent.cpp(125): warning C4018: '<': signed/unsigned mismatch
+  ProjectFuntions.cpp
+c:\users\erik marquez\desktop\cpp\program 4 classes\project 4 classes\projectfuntions.h(6): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\erik marquez\desktop\cpp\program 4 classes\project 4 classes\classstudent.h(6): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\erik marquez\desktop\cpp\program 4 classes\project 4 classes\projectfuntions.cpp(43): warning C4018: '<': signed/unsigned mismatch
+c:\users\erik marquez\desktop\cpp\program 4 classes\project 4 classes\projectfuntions.cpp(64): warning C4018: '<': signed/unsigned mismatch
+c:\users\erik marquez\desktop\cpp\program 4 classes\project 4 classes\projectfuntions.cpp(86): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
   Project 4 Classes.vcxproj -> C:\Users\Erik Marquez\Desktop\Cpp\Program 4 Classes\Project 4 Classes\Debug\Project 4 Classes.exe

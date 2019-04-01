@@ -85,15 +85,7 @@ void CheckOutReport(ofstream & rFile, vector<Student>& student)
 	//Checks to if they are checked
 	for (int i = 0; i < student.size(); i++)
 	{
-		if (student.at(i).CheckOutCount() > 0)
-		{ 
-			
-			
 			rFile << student.at(i);
-			
-			
-
-		}
-
+		
 	}
 }

@@ -53,13 +53,14 @@ bool Student::CheckOut(const string & item)
 	{
 		return false;
 	}
+	/* 
 	for (int i = 0; i < numItemsCheckedOut; i++)
 	{
 		if (item == items[i] )
 		{
 			return false;
 		}
-	}
+	}*/
 
 	if (numItemsCheckedOut == 0)
 	{
@@ -125,7 +126,7 @@ bool Student::HasCheckedOut(const string & item)
 	{
 		if (item == items[i])
 		{
-			cout << " has checked out";
+
 			return true;
 		}
 	}
@@ -134,15 +135,80 @@ bool Student::HasCheckedOut(const string & item)
 
 void Student::Clear()
 {
+	this->iDnumber = 0;
+	this->firstName = "";
+	this->lastName = "";
+	this->numItemsCheckedOut = 0;
+	delete[]items;
+	items = nullptr;
 }
 
-
-const istream& operator>>(istream & in, Student & item)
+Student& Student::operator+(const string& item)
 {
-	// TODO: insert return statement here
+	Student* student = this;
+
+	student->CheckOut(item);
+
+	return *student;
+}
+
+bool Student::operator+=(const std::string& item)
+{
+	return CheckOut(item);
+}
+
+bool Student::operator!=(const int& ID)
+{
+	return this->iDnumber != ID;
+}
+
+/*
+istream& operator>>(istream & in, Student & item)
+{
+	Student.Clear();
+
+	int id, items;
+	string first, last;
+
+	in >> id >> first >> last >> items;
+
+	/* Return a failed stream and let the user determine what to do
+	if (in.fail())
+		return in;
+		*/
+
+	/*
+	// Don't add a student with invalid id, move on to the next student
+	if (!Student.SetID(id))
+	{
+		std::cout << "Omitting student id: " << id << std::endl;
+
+		//Since the stream has advanced to
+		// Skip list of checked out items and the empty line that follows
+		for (int i = 0; i < (items + 1); ++i)
+			in.ignore(256, '\n');
+
+		return in;
+	}
+	
+
+	this-> firstName = first;
+	lastName = last;
+
+	for (int i = 0; i < items; ++i)
+	{
+		string item;
+		in >> item;
+		student.CheckOut(item);
+	}
+
+	
+	//if (items)
+	//	in.ignore(256, '\n');
+
 	return in;
 }
-
+*/
 
 ostream& operator<<(ostream& out, Student& item) {
 	
@@ -152,13 +218,7 @@ ostream& operator<<(ostream& out, Student& item) {
 	for (int i = 0; i < item.CheckOutCount(); i++)
 	{
 		
-		out << item.items[i] << " ";
-		/*
-		if (item.items[i] != " ")
-		{
-			out << item.items[i] << " ";
-		}*/
-		
+		out << item.items[i] << " ";		
 
 	}
 	
@@ -169,9 +229,7 @@ ostream& operator<<(ostream& out, Student& item) {
 }
 
 
- 
-
-Student::Student()
+ Student::Student()
 {
 	int iDnumber = 0;
 	string firstName = "";

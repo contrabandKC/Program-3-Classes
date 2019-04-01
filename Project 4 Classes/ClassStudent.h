@@ -33,8 +33,15 @@ public:
 	bool HasCheckedOut(const string& item);
 	void Clear();
 
-	
-	friend const istream& operator>>(istream& in, Student& item);
+	Student& operator+(const string& item);
+
+	bool operator+=(const string& item);
+
+	bool operator==(const int& studentID);
+
+	bool operator!=(const int& studentID);
+
+	friend  istream& operator>>(istream& in, Student& item);
 
 	friend  ostream& operator<<(ostream& out, Student& item);
 
