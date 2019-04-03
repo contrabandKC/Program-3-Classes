@@ -1,5 +1,6 @@
 #include "ProjectFuntions.h"
 
+//Reads files from starter file
 void readFile(ifstream & rFile, vector<Student> & student)
 {
 	int ID;
@@ -13,6 +14,11 @@ void readFile(ifstream & rFile, vector<Student> & student)
 
 	while (!rFile.eof()) {
 
+		Student tempStudent;
+
+		rFile >> tempStudent;
+		
+		/*
 		rFile >> ID >> first >> last >> numItems;
 
 		student.push_back(Student(ID, first, last, numItems));
@@ -22,15 +28,17 @@ void readFile(ifstream & rFile, vector<Student> & student)
 			for (int i = 0; i < numItems; i++)
 			{
 				rFile >> item;
-				student.at(count).CheckOut(item);
+				student.at(count)+=item;
 			}
 		}
 
-		count++;
-	}
+		count++;*/
+	}	 
 
 }
 
+
+//Reads check out file
 void CheckOutFile(ifstream & rFile, vector<Student>& student)
 {
 
@@ -42,9 +50,9 @@ void CheckOutFile(ifstream & rFile, vector<Student>& student)
 		rFile >> ID >> item;
 		for (int i = 0; i < student.size(); i++)
 		{
-			if (student.at(i).GetId() == ID)
+			if (student.at(i) == ID)
 			{
-				student.at(i).CheckOut(item);
+				student.at(i) = student.at(i) + item;
 				break;
 			}
 
@@ -54,6 +62,8 @@ void CheckOutFile(ifstream & rFile, vector<Student>& student)
 	}
 }
 
+
+//reads check in file
 void CheckInFile(ifstream & rFile, vector<Student>& student)
 {
 	string item ;
@@ -75,6 +85,8 @@ void CheckInFile(ifstream & rFile, vector<Student>& student)
 	}
 }
 
+
+//Makes new check out file
 void CheckOutReport(ofstream & rFile, vector<Student>& student)
 {
 	//Tile

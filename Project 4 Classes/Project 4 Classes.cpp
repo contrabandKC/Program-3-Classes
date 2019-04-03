@@ -28,6 +28,8 @@ void main() {
 	ifstream fin3("checkins.txt");
 	ofstream fOut("Updated_Students.txt");
 
+
+	//Main function calls
 	readFile(fin1, Students);
 
 	CheckOutFile(fin2, Students);

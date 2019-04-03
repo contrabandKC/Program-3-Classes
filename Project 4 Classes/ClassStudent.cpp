@@ -152,9 +152,14 @@ Student& Student::operator+(const string& item)
 	return *student;
 }
 
-bool Student::operator+=(const std::string& item)
+bool Student::operator+=(const string& item)
 {
 	return CheckOut(item);
+}
+
+bool Student::operator==(const int & studentID)
+{
+	return this->iDnumber == studentID;;
 }
 
 bool Student::operator!=(const int& ID)
@@ -162,53 +167,57 @@ bool Student::operator!=(const int& ID)
 	return this->iDnumber != ID;
 }
 
-/*
-istream& operator>>(istream & in, Student & item)
-{
-	Student.Clear();
+Student::Student(const Student& origClass) {
+	iDnumber = origClass.iDnumber;
+	firstName = origClass.firstName;
+	lastName = origClass.lastName;
+	numItemsCheckedOut = origClass.numItemsCheckedOut;
+	*items = *origClass.items;
+}
 
-	int id, items;
+Student& Student::operator=(const Student& objToCopy) {
+
+	if (this != &objToCopy)
+	{
+		iDnumber = objToCopy.iDnumber;
+		firstName = objToCopy.firstName;
+		lastName = objToCopy.lastName;
+		numItemsCheckedOut = objToCopy.numItemsCheckedOut;
+		*items = *objToCopy.items;
+
+	}
+
+	return *this;
+}
+
+
+istream & operator>>(istream & in, Student & item)
+{
+
+	item.Clear();
+
+	int id, numItems;
 	string first, last;
 
-	in >> id >> first >> last >> items;
+	in >> id >> first >> last >> numItems;
 
-	/* Return a failed stream and let the user determine what to do
-	if (in.fail())
-		return in;
-		*/
+	item.SetFirstName(first);
+	item.SetLastName(last);
+	item.SetId(id);
 
-	/*
-	// Don't add a student with invalid id, move on to the next student
-	if (!Student.SetID(id))
+	if (numItems > 0)
 	{
-		std::cout << "Omitting student id: " << id << std::endl;
+		for (int i = 0; i < numItems; ++i)
+		{
+			string items;
+			in >> items;
+			item.CheckOut(items);
+		}
 
-		//Since the stream has advanced to
-		// Skip list of checked out items and the empty line that follows
-		for (int i = 0; i < (items + 1); ++i)
-			in.ignore(256, '\n');
-
-		return in;
 	}
-	
-
-	this-> firstName = first;
-	lastName = last;
-
-	for (int i = 0; i < items; ++i)
-	{
-		string item;
-		in >> item;
-		student.CheckOut(item);
-	}
-
-	
-	//if (items)
-	//	in.ignore(256, '\n');
 
 	return in;
 }
-*/
 
 ostream& operator<<(ostream& out, Student& item) {
 	
